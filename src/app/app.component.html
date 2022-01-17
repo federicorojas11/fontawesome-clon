@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="container navbar navbar-expand-lg navbar-light bg-light">
   <button
     class="navbar-toggler align-self-start"
     type="button"
@@ -10,7 +10,12 @@
   >
     <span class="navbar-toggler-icon"></span>
   </button>
-  <span>test</span>
+  <div class="col-3">
+    <a href="#">
+      <i class="fab fa-font-awesome logo-icon"></i>
+      <span class="page-title" style="padding-bottom: 20px">Font Awesome</span>
+    </a>
+  </div>
   <a class="navbar-brand" href="#">Navbar</a>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -61,18 +66,35 @@
 </nav>
 
 <header>
-  <div class="container header__container pt-4 pb-4">
-    <div class="row">
-      <div class="col-3">
-        <a href="#">
-          <i class="fab fa-font-awesome logo-icon"></i>
-          <span class="page-title" style="padding-bottom: 20px"
-            >Font Awesome</span
-          >
-        </a>
-      </div>
+  <div
+    class="container navbar navbar-expand-lg navbar-light header__container pt-4 pb-4"
+  >
+    <button
+      class="navbar-toggler align-self-start"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="col-3">
+    <div class="col-3">
+      <a href="#" class="d-flex justify-content-start">
+        <i class="fab fa-font-awesome logo-icon"></i>
+        <span class="page-title" style="padding-bottom: 20px"
+          >Font Awesome</span
+        >
+      </a>
+    </div>
+
+    <div
+      class="collapse navbar-collapse col-8 justify-content-evenly"
+      id="navbarSupportedContent"
+    >
+      <div class="">
         <div class="p-1 rounded rounded-pill shadow-sm mb-1 input-group">
           <input
             type="search"
@@ -91,8 +113,8 @@
         </div>
       </div>
 
-      <div class="col-4 nav_container">
-        <div class="navbar">
+      <div class="nav_container">
+        <div class="navbar gap-4">
           <a href="#" style="color: #e7f5fe">Start</a>
           <a href="#">Icons</a>
           <a href="#">Docs</a>
@@ -101,10 +123,12 @@
           <a href="#">Blog</a>
         </div>
       </div>
+    </div>
 
-      <div class="col-2 mt-1 ml-5 pl-5 text-end signin-icon">
-        <a href="#" class="signin"><i class="fas fa-sign-in-alt"></i></a>
-      </div>
+    <div class="col-1 mt-1 ml-5 pl-5 signin-icon">
+      <a href="#" class="signin d-flex justify-content-end"
+        ><i class="fas fa-sign-in-alt"></i
+      ></a>
     </div>
   </div>
 </header>
@@ -195,368 +219,364 @@
       </div>
     </div>
   </div>
+</div>
 
-  <div class="hero__container">
+<div class="hero__container">
+  <div
+    class="container d-flex flex-column align-items-center justify-content-center p-0"
+  >
     <div
-      class="container d-flex flex-column align-items-center justify-content-center p-0"
+      class="row d-flex flex-column align-items-center justify-content-center text-center"
     >
-      <div
-        class="row d-flex flex-column align-items-center justify-content-center text-center"
-      >
-        <div class="col pt-5 rocket">
-          <img
-            src="../assets/rocket-icon.svg"
-            alt="rocket image"
-            style="width: 70px; height: 70px"
-          />
+      <div class="col pt-5 rocket">
+        <img
+          src="../assets/rocket-icon.svg"
+          alt="rocket image"
+          style="width: 70px; height: 70px"
+        />
+      </div>
+      <div class="col p-2">
+        <span class="hero__container__text"> Get Started for Free </span>
+      </div>
+      <div class="col">
+        <span class="hero__container__subtext">
+          CDN powered Kits. 1 line of code. Live in under 1 minute.
+        </span>
+      </div>
+    </div>
+
+    <div class="col-12 d-flex list flex flex-wrap">
+      <div class="card email-form">
+        <div class="card-body">
+          <form>
+            <div
+              class="form-row d-flex align-items-end justify-content-between"
+            >
+              <div class="col-10">
+                <label for="inlineFormInputGroup"
+                  >Enter your email to create your first kit!</label
+                >
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control p-3"
+                    id="inlineFormInputGroup"
+                    placeholder="e.g. jlp@starfleet.org"
+                  />
+                </div>
+              </div>
+              <div class="col-2 text-end">
+                <a
+                  href="#"
+                  class="btn p-3 pt-2 pb-2 btn-primary btn-block send-kitcode-btn"
+                  >Send Kit Code
+                  <svg
+                    class="code-icon"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 164 148"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M66.867 147.914L55.8198 144.647C54.6239 144.3 53.9121 143 54.2538 141.785L94.3427 1.67686C94.6844 0.4628 95.9656 -0.259857 97.1614 0.0870182L108.209 3.35342C109.404 3.7003 110.116 5.00108 109.775 6.21514L69.6858 146.324C69.3441 147.567 68.0913 148.26 66.867 147.914ZM43.1781 112.908L50.9226 104.525C51.8052 103.571 51.7198 102.068 50.7802 101.201L20.5712 74.0003L50.7802 46.7995C51.7483 45.9323 51.8052 44.4292 50.9226 43.4753L43.1781 35.0925C42.324 34.1675 40.8719 34.1097 39.9608 34.9769L0.726042 72.3237C-0.242014 73.2487 -0.242014 74.7808 0.726042 75.7058L39.9608 113.024C40.8719 113.891 42.2955 113.833 43.1781 112.908ZM124.068 113.024L163.274 75.7058C164.242 74.7808 164.242 73.2487 163.274 72.3237L124.068 34.9769C123.157 34.1097 121.704 34.1386 120.85 35.0925L113.106 43.4753C112.223 44.4292 112.309 45.9323 113.248 46.7995L143.457 74.0003L113.248 101.201C112.28 102.068 112.223 103.571 113.106 104.525L120.85 112.908C121.733 113.833 123.157 113.891 124.068 113.024Z"
+                      fill="#E3F3FF"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="col ask-for-account position-absolute">
+                <a href="javascript:;">Already have an account?</a>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="col p-2">
-          <span class="hero__container__text"> Get Started for Free </span>
-        </div>
-        <div class="col">
-          <span class="hero__container__subtext">
-            CDN powered Kits. 1 line of code. Live in under 1 minute.
+        <div class="card-footer d-flex justify-content-between">
+          <a href="javascript:;" class="footer-text"
+            >Why do you need my email address?</a
+          >
+          <span
+            >Powered by
+            <a href="javascript:;">
+              <img
+                src="../assets/cloudflare.svg"
+                style="width: 28px; margin-left: 5px"
+                alt="cloudflare-icon"
+            /></a>
           </span>
         </div>
       </div>
-
-      <div class="col-12 d-flex list flex flex-wrap">
-        <div class="card email-form">
-          <div class="card-body">
-            <form>
-              <div
-                class="form-row d-flex align-items-end justify-content-between"
-              >
-                <div class="col-10">
-                  <label for="inlineFormInputGroup"
-                    >Enter your email to create your first kit!</label
-                  >
-                  <div class="input-group">
-                    <input
-                      type="text"
-                      class="form-control p-3"
-                      id="inlineFormInputGroup"
-                      placeholder="e.g. jlp@starfleet.org"
-                    />
-                  </div>
-                </div>
-                <div class="col-2 text-end">
-                  <a
-                    href="#"
-                    class="btn p-3 pt-2 pb-2 btn-primary btn-block send-kitcode-btn"
-                    >Send Kit Code
-                    <svg
-                      class="code-icon"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 164 148"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M66.867 147.914L55.8198 144.647C54.6239 144.3 53.9121 143 54.2538 141.785L94.3427 1.67686C94.6844 0.4628 95.9656 -0.259857 97.1614 0.0870182L108.209 3.35342C109.404 3.7003 110.116 5.00108 109.775 6.21514L69.6858 146.324C69.3441 147.567 68.0913 148.26 66.867 147.914ZM43.1781 112.908L50.9226 104.525C51.8052 103.571 51.7198 102.068 50.7802 101.201L20.5712 74.0003L50.7802 46.7995C51.7483 45.9323 51.8052 44.4292 50.9226 43.4753L43.1781 35.0925C42.324 34.1675 40.8719 34.1097 39.9608 34.9769L0.726042 72.3237C-0.242014 73.2487 -0.242014 74.7808 0.726042 75.7058L39.9608 113.024C40.8719 113.891 42.2955 113.833 43.1781 112.908ZM124.068 113.024L163.274 75.7058C164.242 74.7808 164.242 73.2487 163.274 72.3237L124.068 34.9769C123.157 34.1097 121.704 34.1386 120.85 35.0925L113.106 43.4753C112.223 44.4292 112.309 45.9323 113.248 46.7995L143.457 74.0003L113.248 101.201C112.28 102.068 112.223 103.571 113.106 104.525L120.85 112.908C121.733 113.833 123.157 113.891 124.068 113.024Z"
-                        fill="#E3F3FF"
-                      />
-                    </svg>
-                  </a>
-                </div>
-                <div class="col ask-for-account position-absolute">
-                  <a href="javascript:;">Already have an account?</a>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="card-footer d-flex justify-content-between">
-            <a href="javascript:;" class="footer-text"
-              >Why do you need my email address?</a
-            >
-            <span
-              >Powered by
-              <a href="javascript:;">
-                <img
-                  src="../assets/cloudflare.svg"
-                  style="width: 28px; margin-left: 5px"
-                  alt="cloudflare-icon"
-              /></a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="container d-flex text-left p-4 mt-4 align-items-start hero-cards"
-    >
-      <div class="col-4 d-flex flex-row flex-wrap">
-        <span class="img-hero-icon">
-          <img src="../assets/rabbit-icon.svg" />
-        </span>
-        <h2 class="text-hero-cards"><b>Icons on Your Site. Fast. </b></h2>
-        <p class="text-hero-cards">
-          Our CDN powered kits make using our icons faster and more powerful
-          than ever. Make changes without ever pushing code or managing files.
-        </p>
-      </div>
-
-      <div class="col-4 d-flex flex-row flex-wrap">
-        <span class="img-hero-icon">
-          <img src="../assets/bag-icon.svg" />
-        </span>
-        <h2 class="text-hero-cards"><b>Auto-Accessibility & More </b></h2>
-        <p class="text-hero-cards">
-          Easily automate your icons' accessibility, control load timing, get
-          Font Awesome Version 4 compatibility, and more.
-        </p>
-      </div>
-
-      <div class="col-4 d-flex flex-row flex-wrap">
-        <span class="img-hero-icon">
-          <img src="../assets/joystick-icon.svg" />
-        </span>
-        <h2 class="text-hero-cards"><b>Level Up Your Icons</b></h2>
-        <p class="text-hero-cards">
-          <a href="javascript:;"> Upgrade to Pro</a>
-          and get 6,256 more icons, more styles, & the fastest icons with our
-          all-new auto-subsetting.
-        </p>
-      </div>
     </div>
   </div>
 
-  <div class="platforms">
-    <div class="container text-center pb-5 pt-5">
-      <h2>Other ways to use</h2>
-
-      <div class="row">
-        <div class="col-6">
-          <a href="javascript:;" class="card">
-            <img src="../assets/platforms-download-icon.svg" />
-            <h3>Download</h3>
-            <p>Serve font awesome yourself.</p>
-          </a>
-        </div>
-        <div class="col-6">
-          <a href="javascript:;" class="card">
-            <img src="../assets/platforms-monitor-icon.svg" />
-            <h3>Desktop</h3>
-            <p>Install locally and use in desktop apps.</p>
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-3">
-          <a href="javascript:;" class="card">
-            <img src="../assets/platforms-npm-icon.svg" />
-            <h3>npm</h3>
-          </a>
-        </div>
-        <div class="col-3">
-          <a href="javascript:;" class="card">
-            <img src="../assets/platforms-yarn-icon.svg" />
-            <h3>Yarn</h3>
-          </a>
-        </div>
-        <div class="col-3">
-          <a href="javascript:;" class="card">
-            <h3>Adobe Apps</h3>
-          </a>
-        </div>
-        <div class="col-3">
-          <a href="javascript:;" class="card">
-            <img src="../assets/platforms-figma-icon.svg" />
-            <h3>Figma</h3>
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-3">
-          <a href="javascript:;" class="card">
-            <img src="../assets/platforms-less-icon.svg" />
-            <h3>Less</h3>
-          </a>
-        </div>
-        <div class="col-3">
-          <a href="javascript:;" class="card">
-            <img src="../assets/platforms-sass-icon.svg" />
-            <h3>Sass</h3>
-          </a>
-        </div>
-        <div class="col-3">
-          <a href="javascript:;" class="card">
-            <img src="../assets/platforms-angular-icon.svg" />
-            <h3>Angular</h3>
-          </a>
-        </div>
-        <div class="col-3">
-          <a href="javascript:;" class="card">
-            <img src="../assets/platforms-ember-icon.svg" />
-            <h3>Ember</h3>
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-3">
-          <a href="javascript:;" class="card">
-            <img src="../assets/platforms-python-icon.svg" />
-            <h3>Python/Django</h3>
-          </a>
-        </div>
-        <div class="col-3">
-          <a href="javascript:;" class="card">
-            <img src="../assets/platforms-react-icon.svg" />
-            <h3>React</h3>
-          </a>
-        </div>
-        <div class="col-3">
-          <a href="javascript:;" class="card">
-            <img src="../assets/platforms-vue-icon.svg" />
-            <h3>Vue.js</h3>
-          </a>
-        </div>
-        <div class="col-3">
-          <a href="javascript:;" class="card">
-            <img src="../assets/platforms-wordpress-icon.svg" />
-            <h3>Wordpress</h3>
-          </a>
-        </div>
-      </div>
-
-      <div class="pt-5 pb-4">
-        <img src="../assets/headphones-icon.svg" style="height: 35px" />
-      </div>
-      <span>
-        <b> Still haven't found what you're looking for? </b> <br />
+  <div class="container d-flex text-left p-4 mt-4 align-items-start hero-cards">
+    <div class="col-4 d-flex flex-row flex-wrap">
+      <span class="img-hero-icon">
+        <img src="../assets/rabbit-icon.svg" />
       </span>
-      <span>
-        Check out our <a href="javascript:;">Docs</a> and
-        <a href="javascript:;">Support</a> first, then if you still can't find
-        it drop us an <a href="javascript:;">email</a>.
+      <h2 class="text-hero-cards"><b>Icons on Your Site. Fast. </b></h2>
+      <p class="text-hero-cards">
+        Our CDN powered kits make using our icons faster and more powerful than
+        ever. Make changes without ever pushing code or managing files.
+      </p>
+    </div>
+
+    <div class="col-4 d-flex flex-row flex-wrap">
+      <span class="img-hero-icon">
+        <img src="../assets/bag-icon.svg" />
       </span>
+      <h2 class="text-hero-cards"><b>Auto-Accessibility & More </b></h2>
+      <p class="text-hero-cards">
+        Easily automate your icons' accessibility, control load timing, get Font
+        Awesome Version 4 compatibility, and more.
+      </p>
+    </div>
+
+    <div class="col-4 d-flex flex-row flex-wrap">
+      <span class="img-hero-icon">
+        <img src="../assets/joystick-icon.svg" />
+      </span>
+      <h2 class="text-hero-cards"><b>Level Up Your Icons</b></h2>
+      <p class="text-hero-cards">
+        <a href="javascript:;"> Upgrade to Pro</a>
+        and get 6,256 more icons, more styles, & the fastest icons with our
+        all-new auto-subsetting.
+      </p>
     </div>
   </div>
-  <footer>
-    <div class="container pt-4">
-      <div class="row main-footer">
-        <div class="col">
-          <h3>Project</h3>
-          <ul>
-            <li>
-              <a href="javascript:;">Latest Release</a>
-              <img src="../assets/footer-latest-release.svg" />
-            </li>
-            <li>
-              <a href="javascript:;">Version 6 Beta</a
-              ><img src="../assets/footer-v6-beta.svg" />
-            </li>
-            <li>
-              <a href="javascript:;">JavaScript API</a
-              ><img src="../assets/code-icon.svg" />
-            </li>
-            <li>
-              <a href="javascript:;">GraphQL API</a
-              ><img src="../assets/footer-graphql-api.svg" />
-            </li>
-            <li>
-              <a href="javascript:;">License</a
-              ><img src="../assets/footer-license.svg" />
-            </li>
-            <li>
-              <a href="javascript:;">GitHub Project</a
-              ><img src="../assets/footer-github.svg" />
-            </li>
-            <li>
-              <a href="javascript:;">Old Version 4.7</a
-              ><img src="../assets/footer-old-ver.svg" />
-            </li>
-          </ul>
-        </div>
-        <div class="col">
-          <h3>Icons</h3>
-          <ul>
-            <li>
-              <a href="javascript">Gallery</a
-              ><img src="../assets/footer-gallery.svg" />
-            </li>
-            <li>
-              <a href="javascript">Cheatsheet</a
-              ><img src="../assets/footer-cheatsheet.svg" />
-            </li>
-            <li>
-              <a href="javascript">Requests Leaderboard</a
-              ><img src="../assets/footer-leaderboard.svg" />
-            </li>
-            <li>
-              <a href="javascript">Request an Icon</a
-              ><img src="../assets/footer-gift.svg" />
-            </li>
-          </ul>
-        </div>
-        <div class="col">
-          <h3>Support</h3>
-          <ul>
-            <li>
-              <a href="javascript:;">Troubleshooting</a
-              ><img src="../assets/footer-troubleshooting.svg" />
-            </li>
-            <li>
-              <a href="javascript:;">Common Questions</a
-              ><img src="../assets/footer-common-questions.svg" />
-            </li>
-            <li>
-              <a href="javascript:;">Report a Bug</a
-              ><img src="../assets/footer-bug.svg" />
-            </li>
-            <li>
-              <a href="javascript:;">Get Help</a
-              ><img src="../assets/footer-get-help.svg" />
-            </li>
-          </ul>
-        </div>
-        <div class="col">
-          <h3>Company</h3>
-          <ul>
-            <li>
-              <a href="javascript:;">Blog</a
-              ><img src="../assets/footer-blog.svg" />
-            </li>
-            <li>
-              <a href="javascript:;">Status</a
-              ><img src="../assets/footer-status.svg" />
-            </li>
-            <li>
-              <a href="javascript:;">Contact Us</a
-              ><img src="../assets/footer-contact.svg" />
-            </li>
-            <li>
-              <a href="javascript:;">@fontawesome</a
-              ><img src="../assets/footer-twitter.svg" />
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="sub-footer">
-      <div class="row mt-4 px-5 pt-4 pb-3">
-        <div class="col-6">
-          <p>
-            Made with <img src="../assets/heart-icon.svg" height="12px" /> &
-            <img src="../assets/coffe-icon.svg" height="12px" /> in Bentonville,
-            Boston, Joplin, Seattle, and Vergennes.
-          </p>
-        </div>
-        <div class="col-6 text-end">
-          <p>
-            © Fonticons, Inc.
-            <span style="margin-left: 14px; margin-right: 8px"> Terms</span>
-            <img src="../assets/plus-icon.svg" height="12px" />
-            <span style="margin-left: 8px"> Privacy</span>
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
 </div>
+
+<div class="platforms">
+  <div class="container text-center pb-5 pt-5">
+    <h2>Other ways to use</h2>
+
+    <div class="row">
+      <div class="col-6">
+        <a href="javascript:;" class="card">
+          <img src="../assets/platforms-download-icon.svg" />
+          <h3>Download</h3>
+          <p>Serve font awesome yourself.</p>
+        </a>
+      </div>
+      <div class="col-6">
+        <a href="javascript:;" class="card">
+          <img src="../assets/platforms-monitor-icon.svg" />
+          <h3>Desktop</h3>
+          <p>Install locally and use in desktop apps.</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-3">
+        <a href="javascript:;" class="card">
+          <img src="../assets/platforms-npm-icon.svg" />
+          <h3>npm</h3>
+        </a>
+      </div>
+      <div class="col-3">
+        <a href="javascript:;" class="card">
+          <img src="../assets/platforms-yarn-icon.svg" />
+          <h3>Yarn</h3>
+        </a>
+      </div>
+      <div class="col-3">
+        <a href="javascript:;" class="card">
+          <h3>Adobe Apps</h3>
+        </a>
+      </div>
+      <div class="col-3">
+        <a href="javascript:;" class="card">
+          <img src="../assets/platforms-figma-icon.svg" />
+          <h3>Figma</h3>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-3">
+        <a href="javascript:;" class="card">
+          <img src="../assets/platforms-less-icon.svg" />
+          <h3>Less</h3>
+        </a>
+      </div>
+      <div class="col-3">
+        <a href="javascript:;" class="card">
+          <img src="../assets/platforms-sass-icon.svg" />
+          <h3>Sass</h3>
+        </a>
+      </div>
+      <div class="col-3">
+        <a href="javascript:;" class="card">
+          <img src="../assets/platforms-angular-icon.svg" />
+          <h3>Angular</h3>
+        </a>
+      </div>
+      <div class="col-3">
+        <a href="javascript:;" class="card">
+          <img src="../assets/platforms-ember-icon.svg" />
+          <h3>Ember</h3>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-3">
+        <a href="javascript:;" class="card">
+          <img src="../assets/platforms-python-icon.svg" />
+          <h3>Python/Django</h3>
+        </a>
+      </div>
+      <div class="col-3">
+        <a href="javascript:;" class="card">
+          <img src="../assets/platforms-react-icon.svg" />
+          <h3>React</h3>
+        </a>
+      </div>
+      <div class="col-3">
+        <a href="javascript:;" class="card">
+          <img src="../assets/platforms-vue-icon.svg" />
+          <h3>Vue.js</h3>
+        </a>
+      </div>
+      <div class="col-3">
+        <a href="javascript:;" class="card">
+          <img src="../assets/platforms-wordpress-icon.svg" />
+          <h3>Wordpress</h3>
+        </a>
+      </div>
+    </div>
+
+    <div class="pt-5 pb-4">
+      <img src="../assets/headphones-icon.svg" style="height: 35px" />
+    </div>
+    <span> <b> Still haven't found what you're looking for? </b> <br /> </span>
+    <span>
+      Check out our <a href="javascript:;">Docs</a> and
+      <a href="javascript:;">Support</a> first, then if you still can't find it
+      drop us an <a href="javascript:;">email</a>.
+    </span>
+  </div>
+</div>
+<footer>
+  <div class="container pt-4">
+    <div class="row main-footer">
+      <div class="col">
+        <h3>Project</h3>
+        <ul>
+          <li>
+            <a href="javascript:;">Latest Release</a>
+            <img src="../assets/footer-latest-release.svg" />
+          </li>
+          <li>
+            <a href="javascript:;">Version 6 Beta</a
+            ><img src="../assets/footer-v6-beta.svg" />
+          </li>
+          <li>
+            <a href="javascript:;">JavaScript API</a
+            ><img src="../assets/code-icon.svg" />
+          </li>
+          <li>
+            <a href="javascript:;">GraphQL API</a
+            ><img src="../assets/footer-graphql-api.svg" />
+          </li>
+          <li>
+            <a href="javascript:;">License</a
+            ><img src="../assets/footer-license.svg" />
+          </li>
+          <li>
+            <a href="javascript:;">GitHub Project</a
+            ><img src="../assets/footer-github.svg" />
+          </li>
+          <li>
+            <a href="javascript:;">Old Version 4.7</a
+            ><img src="../assets/footer-old-ver.svg" />
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Icons</h3>
+        <ul>
+          <li>
+            <a href="javascript">Gallery</a
+            ><img src="../assets/footer-gallery.svg" />
+          </li>
+          <li>
+            <a href="javascript">Cheatsheet</a
+            ><img src="../assets/footer-cheatsheet.svg" />
+          </li>
+          <li>
+            <a href="javascript">Requests Leaderboard</a
+            ><img src="../assets/footer-leaderboard.svg" />
+          </li>
+          <li>
+            <a href="javascript">Request an Icon</a
+            ><img src="../assets/footer-gift.svg" />
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Support</h3>
+        <ul>
+          <li>
+            <a href="javascript:;">Troubleshooting</a
+            ><img src="../assets/footer-troubleshooting.svg" />
+          </li>
+          <li>
+            <a href="javascript:;">Common Questions</a
+            ><img src="../assets/footer-common-questions.svg" />
+          </li>
+          <li>
+            <a href="javascript:;">Report a Bug</a
+            ><img src="../assets/footer-bug.svg" />
+          </li>
+          <li>
+            <a href="javascript:;">Get Help</a
+            ><img src="../assets/footer-get-help.svg" />
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Company</h3>
+        <ul>
+          <li>
+            <a href="javascript:;">Blog</a
+            ><img src="../assets/footer-blog.svg" />
+          </li>
+          <li>
+            <a href="javascript:;">Status</a
+            ><img src="../assets/footer-status.svg" />
+          </li>
+          <li>
+            <a href="javascript:;">Contact Us</a
+            ><img src="../assets/footer-contact.svg" />
+          </li>
+          <li>
+            <a href="javascript:;">@fontawesome</a
+            ><img src="../assets/footer-twitter.svg" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-footer">
+    <div class="row mt-4 px-5 pt-4 pb-3">
+      <div class="col-6">
+        <p>
+          Made with <img src="../assets/heart-icon.svg" height="12px" /> &
+          <img src="../assets/coffe-icon.svg" height="12px" /> in Bentonville,
+          Boston, Joplin, Seattle, and Vergennes.
+        </p>
+      </div>
+      <div class="col-6 text-end">
+        <p>
+          © Fonticons, Inc.
+          <span style="margin-left: 14px; margin-right: 8px"> Terms</span>
+          <img src="../assets/plus-icon.svg" height="12px" />
+          <span style="margin-left: 8px"> Privacy</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
