@@ -155,6 +155,17 @@ input.form-control.rounded {
       width: 102%;
       height: 100%;
     }
+    @media screen and (max-width: 526px) {
+      font-size: 1.1em;
+      min-width: auto;
+    }
+    @media screen and (max-width: 440px) {
+      height: 81px;
+    }
+    @media screen and (max-width: 286px) {
+      height: 101px;
+      font-size: 0.9em;
+    }
   }
 
   & .explore-icons-btn:hover {
@@ -170,7 +181,7 @@ input.form-control.rounded {
 
 /* <-- Hero --> */
 .hero__container {
-  min-height: 100vh;
+  min-height: fit-content;
   background: linear-gradient(#155592, #1b7dd5);
 
   & .img-hero-icon img {
