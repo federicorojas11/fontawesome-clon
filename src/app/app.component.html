@@ -1,9 +1,9 @@
 <header>
   <div
-    class="container navbar navbar-expand-lg navbar-light header__container pt-4 pb-4"
+    class="container navbar navbar-expand-lg navbar-dark header__container pt-4 pb-4"
   >
     <button
-      class="navbar-toggler align-self-start"
+      class="navbar-toggler"
       type="button"
       data-toggle="collapse"
       data-target="#navbarSupportedContent"
@@ -14,10 +14,13 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="col-3">
-      <a href="#" class="d-flex justify-content-start">
+    <div class="col-3 mt-0 d-flex align-items-center justify-content-center">
+      <a
+        href="#"
+        class="d-flex align-items-center justify-content-center justify-content-lg-start"
+      >
         <i class="fab fa-font-awesome logo-icon"></i>
-        <span class="page-title" style="padding-bottom: 20px"
+        <span class="page-title d-none d-md-block" style="padding-bottom: 20px"
           >Font Awesome</span
         >
       </a>
@@ -133,21 +136,7 @@
         class="col-6 col-md-4 col-lg-3 mt-2 mb-1 mt-md-0 mb-md-0 d-flex align-items-center justify-content-center justify-content-md-start gap-4"
       >
         <a href="javascript:;" class="learn-more-btn">
-          <svg
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fas"
-            data-icon="6"
-            class="svg-inline--fa fa-6 six-icon"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 320 512"
-          >
-            <path
-              fill="currentColor"
-              d="M167.7 160.8l64.65-76.06c11.47-13.45 9.812-33.66-3.656-45.09C222.7 34.51 215.3 32.01 208 32.01c-9.062 0-18.06 3.833-24.38 11.29C38.07 214.5 0 245.5 0 320c0 88.22 71.78 160 160 160s160-71.78 160-160C320 234.4 252.3 164.9 167.7 160.8zM160 416c-52.94 0-96-43.06-96-96s43.06-95.1 96-95.1s96 43.06 96 95.1S212.9 416 160 416z"
-            ></path></svg
-          >Learn More!</a
+          <i class="fas fa-chalkboard-teacher"></i> Learn More!</a
         >
       </div>
     </div>
@@ -183,9 +172,9 @@
         <div class="card-body">
           <form>
             <div
-              class="form-row d-flex align-items-end justify-content-between"
+              class="form-row row d-flex align-items-end justify-content-between"
             >
-              <div class="col-10">
+              <div class="col-12 col-lg-10">
                 <label for="inlineFormInputGroup"
                   >Enter your email to create your first kit!</label
                 >
@@ -198,10 +187,10 @@
                   />
                 </div>
               </div>
-              <div class="col-2 text-end">
+              <div class="col-12 col-lg-2">
                 <a
                   href="#"
-                  class="btn p-3 pt-2 pb-2 btn-primary btn-block send-kitcode-btn"
+                  class="btn p-0 p-md-3 mt-1 mt-lg-0 pt-2 pb-2 gap-4 gap-lg-0 d-flex justify-content-center justify-content-lg-between btn-primary btn-block send-kitcode-btn"
                   >Send Kit Code
                   <svg
                     class="code-icon"
@@ -218,7 +207,7 @@
                   </svg>
                 </a>
               </div>
-              <div class="col ask-for-account position-absolute">
+              <div class="col ask-for-account">
                 <a href="javascript:;">Already have an account?</a>
               </div>
             </div>
@@ -242,39 +231,41 @@
     </div>
   </div>
 
-  <div class="container d-flex text-left p-4 mt-4 align-items-start hero-cards">
-    <div class="col-4 d-flex flex-row flex-wrap">
-      <span class="img-hero-icon">
-        <img src="../assets/rabbit-icon.svg" />
-      </span>
-      <h2 class="text-hero-cards"><b>Icons on Your Site. Fast. </b></h2>
-      <p class="text-hero-cards">
-        Our CDN powered kits make using our icons faster and more powerful than
-        ever. Make changes without ever pushing code or managing files.
-      </p>
-    </div>
+  <div class="container text-left p-4 mt-4 hero-cards">
+    <div class="row">
+      <div class="col-12 col-lg-4 my-3 my-lg-0 d-flex flex-row flex-wrap">
+        <span class="img-hero-icon">
+          <img src="../assets/rabbit-icon.svg" />
+        </span>
+        <h2 class="text-hero-cards"><b>Icons on Your Site. Fast. </b></h2>
+        <p class="text-hero-cards">
+          Our CDN powered kits make using our icons faster and more powerful
+          than ever. Make changes without ever pushing code or managing files.
+        </p>
+      </div>
 
-    <div class="col-4 d-flex flex-row flex-wrap">
-      <span class="img-hero-icon">
-        <img src="../assets/bag-icon.svg" />
-      </span>
-      <h2 class="text-hero-cards"><b>Auto-Accessibility & More </b></h2>
-      <p class="text-hero-cards">
-        Easily automate your icons' accessibility, control load timing, get Font
-        Awesome Version 4 compatibility, and more.
-      </p>
-    </div>
+      <div class="col-12 col-lg-4 my-3 my-lg-0 d-flex flex-row flex-wrap">
+        <span class="img-hero-icon">
+          <img src="../assets/bag-icon.svg" />
+        </span>
+        <h2 class="text-hero-cards"><b>Auto-Accessibility & More </b></h2>
+        <p class="text-hero-cards">
+          Easily automate your icons' accessibility, control load timing, get
+          Font Awesome Version 4 compatibility, and more.
+        </p>
+      </div>
 
-    <div class="col-4 d-flex flex-row flex-wrap">
-      <span class="img-hero-icon">
-        <img src="../assets/joystick-icon.svg" />
-      </span>
-      <h2 class="text-hero-cards"><b>Level Up Your Icons</b></h2>
-      <p class="text-hero-cards">
-        <a href="javascript:;"> Upgrade to Pro</a>
-        and get 6,256 more icons, more styles, & the fastest icons with our
-        all-new auto-subsetting.
-      </p>
+      <div class="col-12 col-lg-4 my-3 my-lg-0 d-flex flex-row flex-wrap">
+        <span class="img-hero-icon">
+          <img src="../assets/joystick-icon.svg" />
+        </span>
+        <h2 class="text-hero-cards"><b>Level Up Your Icons</b></h2>
+        <p class="text-hero-cards">
+          <a href="javascript:;"> Upgrade to Pro</a>
+          and get 6,256 more icons, more styles, & the fastest icons with our
+          all-new auto-subsetting.
+        </p>
+      </div>
     </div>
   </div>
 </div>
@@ -284,14 +275,14 @@
     <h2>Other ways to use</h2>
 
     <div class="row">
-      <div class="col-6">
+      <div class="col-12 col-md-6">
         <a href="javascript:;" class="card">
           <img src="../assets/platforms-download-icon.svg" />
           <h3>Download</h3>
           <p>Serve font awesome yourself.</p>
         </a>
       </div>
-      <div class="col-6">
+      <div class="col-12 col-md-6">
         <a href="javascript:;" class="card">
           <img src="../assets/platforms-monitor-icon.svg" />
           <h3>Desktop</h3>
@@ -301,78 +292,74 @@
     </div>
 
     <div class="row">
-      <div class="col-3">
+      <div class="col-6 col-md-4 col-lg-3">
         <a href="javascript:;" class="card">
           <img src="../assets/platforms-npm-icon.svg" />
           <h3>npm</h3>
         </a>
       </div>
-      <div class="col-3">
+      <div class="col-6 col-md-4 col-lg-3">
         <a href="javascript:;" class="card">
           <img src="../assets/platforms-yarn-icon.svg" />
           <h3>Yarn</h3>
         </a>
       </div>
-      <div class="col-3">
+      <div class="col-6 col-md-4 col-lg-3">
         <a href="javascript:;" class="card">
           <h3>Adobe Apps</h3>
         </a>
       </div>
-      <div class="col-3">
+      <div class="col-6 col-md-4 col-lg-3">
         <a href="javascript:;" class="card">
           <img src="../assets/platforms-figma-icon.svg" />
           <h3>Figma</h3>
         </a>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-3">
+      <div class="col-6 col-md-4 col-lg-3">
         <a href="javascript:;" class="card">
           <img src="../assets/platforms-less-icon.svg" />
           <h3>Less</h3>
         </a>
       </div>
-      <div class="col-3">
+      <div class="col-6 col-md-4 col-lg-3">
         <a href="javascript:;" class="card">
           <img src="../assets/platforms-sass-icon.svg" />
           <h3>Sass</h3>
         </a>
       </div>
-      <div class="col-3">
+      <div class="col-6 col-md-4 col-lg-3">
         <a href="javascript:;" class="card">
           <img src="../assets/platforms-angular-icon.svg" />
           <h3>Angular</h3>
         </a>
       </div>
-      <div class="col-3">
+      <div class="col-6 col-md-4 col-lg-3">
         <a href="javascript:;" class="card">
           <img src="../assets/platforms-ember-icon.svg" />
           <h3>Ember</h3>
         </a>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-3">
+      <div class="col-6 col-md-4 col-lg-3">
         <a href="javascript:;" class="card">
           <img src="../assets/platforms-python-icon.svg" />
           <h3>Python/Django</h3>
         </a>
       </div>
-      <div class="col-3">
+      <div class="col-6 col-md-4 col-lg-3">
         <a href="javascript:;" class="card">
           <img src="../assets/platforms-react-icon.svg" />
           <h3>React</h3>
         </a>
       </div>
-      <div class="col-3">
+      <div class="col-6 col-md-4 col-lg-3">
         <a href="javascript:;" class="card">
           <img src="../assets/platforms-vue-icon.svg" />
           <h3>Vue.js</h3>
         </a>
       </div>
-      <div class="col-3">
+      <div class="col-6 col-md-4 col-lg-3">
         <a href="javascript:;" class="card">
           <img src="../assets/platforms-wordpress-icon.svg" />
           <h3>Wordpress</h3>
